@@ -121,8 +121,7 @@ h1 {
   background: #fff;
   border-radius: 16px;
   padding: 2rem;
-  max-width: 560px;
-  width: 100%;
+  width: 80%;
   max-height: 85vh;
   overflow-y: auto;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(0, 0, 0, 0.05);
@@ -168,7 +167,54 @@ h1 {
 
 .modal-answer {
   color: #475569;
-  white-space: pre-wrap;
+}
+
+.modal-answer p {
+  margin-bottom: 0.75em;
+}
+
+.modal-answer p:last-child {
+  margin-bottom: 0;
+}
+
+.modal-answer p.answer-heading {
+  font-weight: 700;
+  color: #0f172a;
+  margin-top: 0.5em;
+  margin-bottom: 0.35em;
+}
+
+.modal-answer p.answer-heading:first-child {
+  margin-top: 0;
+}
+
+.modal-answer .answer-key {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.modal-answer .answer-code,
+.modal-answer pre.answer-code {
+  margin: 1em 0;
+  padding: 1rem;
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, monospace;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  overflow-x: auto;
+  white-space: pre;
+}
+
+.modal-answer .answer-code code {
+  color: #334155;
+  background: none;
+  padding: 0;
+}
+
+.modal-answer p.answer-space {
+  margin: 0.25em 0;
 }
 
 @media (max-width: 640px) {
