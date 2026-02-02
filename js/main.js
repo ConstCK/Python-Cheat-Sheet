@@ -128,7 +128,15 @@ const BLOCKS = [
     section.id = block.id;
     const h2 = document.createElement('h2');
     h2.className = 'block-title';
-    h2.textContent = block.title;
+    const toggle = document.createElement('span');
+    toggle.className = 'block-title-toggle';
+    toggle.setAttribute('aria-hidden', 'true');
+    toggle.textContent = '\u25BE';
+    h2.appendChild(toggle);
+    h2.appendChild(document.createTextNode(block.title));
+    h2.addEventListener('click', function () {
+      section.classList.toggle('block--collapsed');
+    });
     section.appendChild(h2);
     const cardsWrap = document.createElement('div');
     cardsWrap.className = 'cards';
