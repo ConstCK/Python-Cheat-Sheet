@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MP</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
+  <button type="button" class="btn-500" id="btn-500" aria-label="500">500</button>
+
   <div class="container">
     <header>
       <h1>Python Interview Cheat Sheet</h1>
     </header>
     <div id="blocks"></div>
+  </div>
+
+  <div id="screen-500" class="screen-500" aria-hidden="true">
+    <div class="screen-500-content">
+      <span class="screen-500-code">500</span>
+      <span class="screen-500-text">Internal Server Error</span>
+    </div>
   </div>
 
   <div id="modal" class="modal">
@@ -25,4 +36,5 @@
 
   <script src="js/main.js"></script>
 </body>
+
 </html>
