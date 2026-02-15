@@ -309,6 +309,35 @@ h1 {
   padding: 0;
 }
 
+/* Пара: пояснение + код к нему; между парами — отступ; левая граница общая */
+.modal-answer .answer-code .answer-code-pair {
+  display: block;
+  margin-top: 1em;
+  border-left: 3px solid #0d9488;
+  padding-left: 0;
+  line-height: 1;
+}
+
+.modal-answer .answer-code .answer-code-pair:first-child {
+  margin-top: 0;
+}
+
+.modal-answer .answer-code .answer-code-pair .answer-code-comment {
+  display: block;
+  margin: 0 0 0 -1rem;
+  padding: 0.15em 1rem;
+  background: rgba(13, 148, 136, 0.12);
+  color: #0f766e;
+  font-weight: 600;
+  border-left: none;
+}
+
+/* Строка кода в паре — маленький отступ от пояснения */
+.modal-answer .answer-code .answer-code-pair .answer-code-line {
+  display: block;
+  margin-top: 12px;
+}
+
 .modal-answer p.answer-space {
   margin: 0.25em 0;
 }
