@@ -263,6 +263,7 @@ h1 {
 
 .modal-answer {
   color: #134e4a;
+  font-size: 1.1rem;
 }
 
 .modal-answer p {
@@ -297,7 +298,7 @@ h1 {
   border: 1px solid #99f6e4;
   border-radius: 8px;
   font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, monospace;
-  font-size: 0.875rem;
+  font-size: 0.96rem;
   line-height: 1.5;
   overflow-x: auto;
   white-space: pre;
